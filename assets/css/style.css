@@ -1,0 +1,49 @@
+body{
+	background-image: url(../images/patterns.png);
+}
+.container{
+			width: 50%;
+			max-width: 960px;
+			margin: 5% auto;
+			clear:both;
+			padding: 10% 10%;
+			}
+h1{
+	font-size: 42px;
+	color: #D2B785;
+	text-align: center;
+	font-weight: bold;
+}
+h2{
+	color: grey;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 46px;
+	
+}
+p{
+	
+	text-align: center;
+	font-size: 26px;
+	line-height: 28px;
+	font-weight: bold;
+}
+#crystals {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom:26px;
+
+}
+
+.crystalImage {
+	height: 111px;
+	border: solid 1px #272525;
+	margin-left: 10px;
+	background-color: black;
+}
+
+.crystalImage:firstchild {
+	margin-left: 0px;
+
+}
