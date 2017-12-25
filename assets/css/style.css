@@ -38,9 +38,9 @@ p{
 
 .crystalImage {
 	height: 111px;
-	border: solid 1px #272525;
+	border: solid 1px #D2B785;
 	margin-left: 10px;
-	background-color: black;
+	background-color: #EFEFEF;
 }
 
 .crystalImage:firstchild {

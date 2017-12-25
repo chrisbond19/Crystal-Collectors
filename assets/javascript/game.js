@@ -3,12 +3,10 @@ $(document).ready(function() {
     var userScore = 0;
     var wins = 0;
     var losses = 0;
-    // Create array for the crystals
+    // Creates an array for the crystal images
     crystals = ['assets/images/emerald.png', 'assets/images/ruby.png', 'assets/images/sapphire.png', 'assets/images/topaz.png'];
-    //Start a new game
-    
-    
 
+    //Create crystals from the array
     function newCrystals () {
       var crystalNumbers = []
         while (crystalNumbers.length < 4){
@@ -33,6 +31,7 @@ $(document).ready(function() {
         }
     }
 
+    //Start a new game
     function startGame() {
         //Start with user's score with a number of 0
         userScore = 0;
@@ -48,7 +47,7 @@ $(document).ready(function() {
          const num = event.currentTarget.dataset.num;
          userScore = userScore + Number(num);
         $('#userScore').text(userScore);
-          
+          //Detects if the user won the game
         if (userScore == computerRandom){
           $('#winorLose').text('You won!');
           wins ++;
@@ -56,9 +55,7 @@ $(document).ready(function() {
           $('#crystals').empty();
           setTimeout(function(){startGame();},2000);
           newCrystals();
-          startGame();
-
-            
+          //Detects if the user lost the game
         } else if ( userScore > computerRandom){
             $('#winorLose').text('You lost!');
             losses ++;
@@ -66,7 +63,6 @@ $(document).ready(function() {
             $('#crystals').empty();
             setTimeout(function(){startGame();},2000);
             newCrystals();
-            startGame();
            }
         });
     }
